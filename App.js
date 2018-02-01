@@ -11,6 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
+import Chromecast from 'react-native-google-cast';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -18,9 +19,9 @@ const instructions = Platform.select({
   android: 'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu',
 });
-
 export default class App extends Component<{}> {
   render() {
+
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
